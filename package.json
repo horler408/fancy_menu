@@ -1,0 +1,19 @@
+{
+  "name": "webpages",
+  "version": "1.0.0",
+  "description": "Fancy menu bar with login page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/horler408/fancy_menu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/horler408/fancy_menu/issues"
+  },
+  "homepage": "https://github.com/horler408/fancy_menu#readme"
+}
