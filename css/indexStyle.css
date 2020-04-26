@@ -6,7 +6,8 @@
 }
 
 body {
-  background-image: url('../images/back3.png');
+  background-image: url('../images/back_new.png');
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   font-family: sans-serif;
