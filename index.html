@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Home Page</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/indexStyle.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div class="container">
+	<header>
+		<nav class="nav-bar nav-1">
+		<img src="./images/milk-shake.jpg" width="100" height="100" class="logo">
+		<ul class="nav-links">
+			<li class="active nav-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+			<li class="nav-item"><a href="./pages/info.html"><i class="fa fa-user" aria-hidden="true"></i>About Us</a></li>
+			<li class="nav-item"><a href="./pages/clients.html"><i class="fa fa-users" aria-hidden="true"></i>Clients</a></li>
+			<li class="nav-item"><a href="./pages/gallery.html"><i class="fa fa-inr" aria-hidden="true"></i>Gallery</a></li>
+			<li class="nav-item"><a href="./pages/price.html"><i class="fa fa-home" aria-hidden="true"></i>Pricing</a></li>
+			<li class="nav-item"><a href="./pages/training.html"><i class="fa fa-edit" aria-hidden="true"></i>Training</a></li>
+			<li class="nav-item"><a href="./pages/service.html"><i class="fa fa-clone" aria-hidden="true"></i>Services</a>
+				<div class="sub-nav">
+					<ul>
+						<li class="sub-nav-item">Web Designing</li>
+						<li class="sub-nav-item">Front-end Development</li>
+						<li class="more-item sub-nav-item">Software Development<i class="fa fa-angle-right"></i>
+							<div class="sub-sub-nav">
+								<ul>
+									<li>Java</li>
+									<li>PHP</li>
+									<li>Python</li>
+									<li>JavaScript</li>
+									<li>Dart</li>
+								</ul>
+							</div>
+						</li>
+						<li class="more-item sub-nav-item">Data Science<i class="fa fa-angle-right"></i>
+							<div class="sub-sub-nav">
+								<ul>
+									<li>Python</li>
+									<li>R language</li>
+									<li>Artificial Intelligence</li>
+									<li>Postgre</li>
+									<li>Git hub</li>
+									<li>SQL</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="nav-item"><a href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i>Contact</a></li>
+		</ul>
+	</nav>
+	<div class="hamburger">
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>	
+	</div>
+	<nav class="nav-bar nav-2">
+		<ul class="nav-links">
+			<li class="active nav-2-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+			<li class="nav-2-item"><a href="./pages/info.html"><i class="fa fa-user" aria-hidden="true"></i>About Us</a></li>
+			<li class="nav-2-item"><a href="./pages/clients.html"><i class="fa fa-users" aria-hidden="true"></i>Clients</a></li>
+			<li class="nav-2-item"><a href="./pages/gallery.html"><i class="fa fa-inr" aria-hidden="true"></i>Gallery</a></li>
+			<li class="nav-2-item"><a href="./pages/price.html"><i class="fa fa-home" aria-hidden="true"></i>Pricing</a></li>
+			<li class="nav-2-item"><a href="./pages/training.html"><i class="fa fa-edit" aria-hidden="true"></i>Training</a></li>
+			<li class="nav-2-item"><a href="./pages/service.html"><i class="fa fa-clone" aria-hidden="true"></i>Services</a></li>
+			<li class="nav-2-item"><a href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i>Contact</a></li>
+		</ul>
+	</nav>
+	</header>
+	<main>
+	<div class="login-box">
+		<h1 id="login">Login</h1>
+		<h1 id="register">Register</h1>
+		<form class="login">
+			<div class="text-box">
+				<i class="fa fa-user" aria-hidden="true"></i>
+				<input type="text" name="" placeholder="Username">
+			</div>
+			<div class="text-box">
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+				<input type="email" name="" placeholder="Email">
+			</div>
+			<div class="text-box">
+				<i class="fa fa-lock" aria-hidden="true"></i>
+				<input type="password" name="" placeholder="password">
+			</div>
+			<input type="button" name="" class="btn" value="Sign in">
+			<p class="forget"><a href="">Forgot Password?</a></p>
+		</form>
+
+		<form class="register">
+			<div class="text-box">
+				<i class="fa fa-user" aria-hidden="true"></i>
+				<input type="text" name="fName" placeholder="First Name">
+			</div>
+			<div class="text-box">
+				<i class="fa fa-user" aria-hidden="true"></i>
+				<input type="text" name="lName" placeholder="Last Name">
+			</div>
+			<div class="text-box">
+				<i class="fa fa-user" aria-hidden="true"></i>
+				<input type="text" name="" placeholder="Username">
+			</div>
+			<div class="text-box">
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+				<input type="email" name="" placeholder="Email">
+			</div>
+			<div class="text-box">
+				<i class="fa fa-lock" aria-hidden="true"></i>
+				<input type="password" name="" placeholder="password">
+			</div>
+			<div class="text-box">
+				<i class="fa fa-lock" aria-hidden="true"></i>
+				<input type="password" name="" placeholder="confirm password">
+			</div>
+			<input type="button" name="" class="btn" value="Register">
+		</form>
+	</div>
+	</main>
+
+	<footer>
+	</footer>
+</div>
+	<script type="text/javascript" src="./js/pageScript.js"></script>
+</body>
+</html>
