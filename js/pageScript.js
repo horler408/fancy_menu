@@ -32,6 +32,7 @@ regBorder.classList.add('button-border');
 const menuBtn = document.querySelector('.hamburger');
 const menus = document.querySelector('.nav-2-item');
 const navBar = document.querySelector('.nav-2');
+const loginBox = document.querySelector('.login-box');
 
 //Hamburger Menu Events
 menuBtn.addEventListener('click', () => {
@@ -41,6 +42,8 @@ menuBtn.addEventListener('click', () => {
 		menus.forEach(menu => {
 			menu.style.display = 'block';
 			//menu.classList.toggle('fade');
+
+			loginBox.style.display = 'block';
 		});	
 	}
 	else {
