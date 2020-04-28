@@ -11,6 +11,7 @@ body {
   background-size: cover;
   background-position: center;
   font-family: sans-serif;
+  min-height: 100vh;
 }
 
 /*Nav Bar Styling*/
@@ -115,6 +116,13 @@ body {
     left: 40%;
     color: grey;
 }
+
+.terms, .forget {
+  color: #000;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
 
 .forget a {
   text-decoration: none;
