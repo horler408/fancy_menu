@@ -201,7 +201,7 @@ body {
     width: 80%;
     float: left;
     margin: 10px 10px;
-    color: #fff;*/
+    color: #fff;
 }
 
 .btn {
@@ -215,6 +215,7 @@ body {
     color: green;
     font-weight: bolder;
 }
+
 
 @media screen and (max-width: 1024px) {
   .main-container {

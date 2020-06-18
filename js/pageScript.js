@@ -72,17 +72,22 @@ regBtn.addEventListener('click', function(e) {
 function validate() {
 	let isValid = false;
 
-	if (document.getElementById('fname') === '' && 
-		document.getElementById('lname') === '' &&
-		document.getElementById('username') === '' &&
-		document.getElementById('password') === '' &&
-		document.getElementById('email') === '') {
+	if (document.getElementById('fname').value === '' ||
+		document.getElementById('lname').value === '' ||
+		document.getElementById('username').value === '' ||
+		document.getElementById('password').value === '' ||
+		document.getElementById('email').value === '') {
 		isValid = true;
 	}
 
-	/*if (!(document.getElementById('password').match(document.getElementById('confirm-password')))) {
-		isValid = false;
-	}*/
+	if ((document.getElementById('password').value).length < 8) {
+		isValid = true
+	}
+
+	if (!((document.getElementById('password').value).match((document.getElementById('confirm-password').value)))) {
+		isValid = true;
+	}
+
 
 	return isValid;
 }
