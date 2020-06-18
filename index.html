@@ -6,43 +6,43 @@
 	<link rel="stylesheet" type="text/css" href="./css/indexStyle.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
 <div class="container">
 	<header>
 		<nav class="nav-bar nav-1">
 		<img src="./images/milk-shake.jpg" width="100" height="100" class="logo">
+		<h1 class="header-logo">HorlerTech</h1>
 		<ul class="nav-links">
 			<li class="active nav-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-			<li class="nav-item"><a href="./pages/info.html"><i class="fa fa-user" aria-hidden="true"></i>About Us</a></li>
+			<li class="nav-item"><a href="./pages/info.html"><i class="fa fa-user" aria-hidden="true"></i>About</a></li>
 			<li class="nav-item"><a href="./pages/clients.html"><i class="fa fa-users" aria-hidden="true"></i>Clients</a></li>
 			<li class="nav-item"><a href="./pages/gallery.html"><i class="fa fa-inr" aria-hidden="true"></i>Gallery</a></li>
 			<li class="nav-item"><a href="./pages/price.html"><i class="fa fa-home" aria-hidden="true"></i>Pricing</a></li>
 			<li class="nav-item"><a href="./pages/service.html"><i class="fa fa-clone" aria-hidden="true"></i>Services</a>
 				<div class="sub-nav">
 					<ul>
-						<li class="sub-nav-item">Web Designing</li>
-						<li class="sub-nav-item">Front-end Development</li>
+						<li class="sub-nav-item"><a href="#">Web Designing</a></li>
+						<li class="sub-nav-item"><a href="#">Front-end Development</a></li>
 						<li class="more-item sub-nav-item">Software Development<i class="fa fa-angle-right"></i>
 							<div class="sub-sub-nav">
 								<ul>
-									<li>Java</li>
-									<li>PHP</li>
-									<li>Python</li>
-									<li>JavaScript</li>
-									<li>Dart</li>
+									<li><a href="#">Java</a></li>
+									<li><a href="#">PHP</a></li>
+									<li><a href="#">Python</a></li>
+									<li><a href="#">JavaScript</a></li>
+									<li><a href="#">Dart</a></li>
 								</ul>
 							</div>
 						</li>
 						<li class="more-item sub-nav-item">Data Science<i class="fa fa-angle-right"></i>
 							<div class="sub-sub-nav">
 								<ul>
-									<li>Python</li>
-									<li>R language</li>
-									<li>Artificial Intelligence</li>
-									<li>Postgre</li>
-									<li>Git hub</li>
-									<li>SQL</li>
+									<li><a href="#">Python</a></li>
+									<li><a href="#">R language</a></li>
+									<li><a href="#">Artificial Intelligence</a></li>
+									<li><a href="#">Postgre</a></li>
+									<li><a href="#">Git hub</a></li>
+									<li><a href="">SQL</a></li>
 								</ul>
 							</div>
 						</li>
@@ -72,57 +72,58 @@
 		</ul>
 	</nav>
 	</header>
-	<main>
+	<main class="main-container">
 	<div class="login-box">
 		<h1 id="login">Login</h1>
 		<h1 id="register">Register</h1>
 		<form class="login">
 			<div class="text-box">
 				<i class="fa fa-user" aria-hidden="true"></i>
-				<input type="text" name="" placeholder="Username">
+				<input type="text" name="" placeholder="Username" required>
 			</div>
 			<div class="text-box">
 				<i class="fa fa-envelope" aria-hidden="true"></i>
-				<input type="email" name="" placeholder="Email">
+				<input type="email" name="" placeholder="Email" required>
 			</div>
 			<div class="text-box">
 				<i class="fa fa-lock" aria-hidden="true"></i>
-				<input type="password" name="" placeholder="password">
+				<input type="password" name="" placeholder="password" required>
 			</div>
-			<input type="button" name="" class="btn" value="Sign in">
 			<div>
-				<input type="checkbox" name="terms" >
+				<input type="checkbox" name="terms" required>
 				<label class="terms">Terms of service</label>
 			</div>
-			<p class="forget"><a href="">Forgot Password?</a></p>
+			<input type="submit" name="" class="btn" value="Sign in" id="btn-login">
+			<div class="forget"><a href="">Forgot Password?</a></div>
 		</form>
 
 		<form class="register">
 			<div class="text-box">
 				<i class="fa fa-user" aria-hidden="true"></i>
-				<input type="text" name="fName" placeholder="First Name">
+				<input type="text" id="fname" placeholder="First Name" required>
 			</div>
 			<div class="text-box">
 				<i class="fa fa-user" aria-hidden="true"></i>
-				<input type="text" name="lName" placeholder="Last Name">
+				<input type="text" id="lname" placeholder="Last Name" required>
 			</div>
 			<div class="text-box">
 				<i class="fa fa-user" aria-hidden="true"></i>
-				<input type="text" name="" placeholder="Username">
+				<input type="text" id="username" placeholder="Username" required>
 			</div>
 			<div class="text-box">
 				<i class="fa fa-envelope" aria-hidden="true"></i>
-				<input type="email" name="" placeholder="Email">
+				<input type="email" id="email" placeholder="Email" required>
 			</div>
 			<div class="text-box">
 				<i class="fa fa-lock" aria-hidden="true"></i>
-				<input type="password" name="" placeholder="password">
+				<input type="password" id="password" placeholder="password" required>
 			</div>
 			<div class="text-box">
 				<i class="fa fa-lock" aria-hidden="true"></i>
-				<input type="password" name="" placeholder="confirm password">
+				<input type="password" id="confirm-password" placeholder="confirm password" required>
 			</div>
-			<input type="button" name="" class="btn" value="Register">
+			<input type="submit" name="" class="btn" value="Register" id="btn-register">
+			<div>Already Registered? <a class="forget" href="/">Login</a></div>
 		</form>
 	</div>
 	</main>

@@ -4,10 +4,13 @@
 
 testPage();*/
 //Login/Register Form DOM
+//const form = document.getElementsByTagName('form');
 const loginBorder = document.getElementById('login');
 const regBorder = document.getElementById('register');
 const login = document.querySelector('.login');
-const register = document.querySelector('.register')
+const register = document.querySelector('.register');
+const loginBtn = document.getElementById('btn-login');
+const regBtn = document.getElementById('btn-register')
 
 //Login/Register Form Events
 loginBorder.addEventListener('click', () => {
@@ -35,12 +38,12 @@ const navBar = document.querySelector('.nav-2');
 const loginBox = document.querySelector('.login-box');
 
 //Hamburger Menu Events
+navBar.style.display = 'none';
 menuBtn.addEventListener('click', () => {
 	if (navBar.style.display === 'none') {
 		navBar.style.display = 'block';
 	 
 		menus.forEach(menu => {
-			menu.style.display = 'block';
 			//menu.classList.toggle('fade');
 
 			loginBox.style.display = 'block';
@@ -52,3 +55,34 @@ menuBtn.addEventListener('click', () => {
 	
 });
 
+//Sign-in and Register Form
+regBtn.addEventListener('click', function(e) {
+	e.preventDefault();
+	const err = validate();
+	if (!err) {
+		alert("Form Submitted Successfully");
+	}
+	else {
+		alert("Fill all neccessary fields")
+	}
+
+});
+
+//Function Declaration
+function validate() {
+	let isValid = false;
+
+	if (document.getElementById('fname') === '' && 
+		document.getElementById('lname') === '' &&
+		document.getElementById('username') === '' &&
+		document.getElementById('password') === '' &&
+		document.getElementById('email') === '') {
+		isValid = true;
+	}
+
+	/*if (!(document.getElementById('password').match(document.getElementById('confirm-password')))) {
+		isValid = false;
+	}*/
+
+	return isValid;
+}
