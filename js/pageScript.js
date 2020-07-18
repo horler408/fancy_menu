@@ -14,26 +14,26 @@ const regBtn = document.getElementById('btn-register')
 
 //Login/Register Form Events
 loginBorder.addEventListener('click', () => {
-	loginBorder.classList.remove('button-border');
-	regBorder.classList.add('button-border');
+	loginBorder.classList.add('button-border');
+	regBorder.classList.remove('button-border');
 	login.classList.remove('display');
 	register.classList.add('display');
 });
 
 regBorder.addEventListener('click', () => {
-	loginBorder.classList.add('button-border');
-	regBorder.classList.remove('button-border');
+	loginBorder.classList.remove('button-border');
+	regBorder.classList.add('button-border');
 	login.classList.add('display');
 	register.classList.remove('display');
 })
 
 register.classList.add('display');
-regBorder.classList.add('button-border');
+loginBorder.classList.add('button-border');
 /*body.style.backgroundColor = 'transparent';*/
 
 //Hamburder Menu DOM
 const menuBtn = document.querySelector('.hamburger');
-const menus = document.querySelector('.nav-2-item');
+const menus = document.querySelectorAll('.nav-2-item');
 const navBar = document.querySelector('.nav-2');
 const loginBox = document.querySelector('.login-box');
 
